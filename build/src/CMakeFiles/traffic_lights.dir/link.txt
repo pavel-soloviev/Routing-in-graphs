@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/traffic_lights.dir/main.cpp.o CMakeFiles/traffic_lights.dir/algorithm.cpp.o -o ../bin/traffic_lights 
