@@ -233,6 +233,30 @@ test_algorithm.cpp.s:
 	cd /home/pavel/Routing-in-graphs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test_algorithm.cpp.s
 .PHONY : test_algorithm.cpp.s
 
+test_utils.o: test_utils.cpp.o
+.PHONY : test_utils.o
+
+# target to build an object file
+test_utils.cpp.o:
+	cd /home/pavel/Routing-in-graphs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test_utils.cpp.o
+.PHONY : test_utils.cpp.o
+
+test_utils.i: test_utils.cpp.i
+.PHONY : test_utils.i
+
+# target to preprocess a source file
+test_utils.cpp.i:
+	cd /home/pavel/Routing-in-graphs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test_utils.cpp.i
+.PHONY : test_utils.cpp.i
+
+test_utils.s: test_utils.cpp.s
+.PHONY : test_utils.s
+
+# target to generate assembly for a file
+test_utils.cpp.s:
+	cd /home/pavel/Routing-in-graphs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test_utils.cpp.s
+.PHONY : test_utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... test_algorithm.o"
 	@echo "... test_algorithm.i"
 	@echo "... test_algorithm.s"
+	@echo "... test_utils.o"
+	@echo "... test_utils.i"
+	@echo "... test_utils.s"
 .PHONY : help
 
 

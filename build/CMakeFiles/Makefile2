@@ -167,7 +167,7 @@ tests/googletest/googletest/clean: tests/googletest/googletest/CMakeFiles/gtest_
 src/CMakeFiles/traffic_lights.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/traffic_lights.dir/build.make src/CMakeFiles/traffic_lights.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/traffic_lights.dir/build.make src/CMakeFiles/traffic_lights.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pavel/Routing-in-graphs/build/CMakeFiles --progress-num=12,13,14 "Built target traffic_lights"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pavel/Routing-in-graphs/build/CMakeFiles --progress-num=13,14,15 "Built target traffic_lights"
 .PHONY : src/CMakeFiles/traffic_lights.dir/all
 
 # Build rule for subdir invocation for target.
@@ -194,12 +194,12 @@ tests/CMakeFiles/tests.dir/all: tests/googletest/googletest/CMakeFiles/gtest.dir
 tests/CMakeFiles/tests.dir/all: tests/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pavel/Routing-in-graphs/build/CMakeFiles --progress-num=9,10,11 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pavel/Routing-in-graphs/build/CMakeFiles --progress-num=9,10,11,12 "Built target tests"
 .PHONY : tests/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/Routing-in-graphs/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/Routing-in-graphs/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pavel/Routing-in-graphs/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/tests.dir/rule

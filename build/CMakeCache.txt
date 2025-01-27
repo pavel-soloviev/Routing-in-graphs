@@ -284,6 +284,15 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
+RoutingInGraphs_BINARY_DIR:STATIC=/home/pavel/Routing-in-graphs/build/tests
+
+//Value Computed by CMake
+RoutingInGraphs_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+RoutingInGraphs_SOURCE_DIR:STATIC=/home/pavel/Routing-in-graphs/tests
+
+//Value Computed by CMake
 TrafficLights_BINARY_DIR:STATIC=/home/pavel/Routing-in-graphs/build
 
 //Value Computed by CMake
