@@ -24,7 +24,6 @@ void addTestsFromDirectory(const std::string& directory) {
         if (entry.is_regular_file() && entry.path().extension() == ".test") {
             std::string filename = entry.path().string();
 
-            // Парсим тестовые данные
             auto [N, E, edges, start, end, expected_result] = parseTestFile(filename);
 
 	    std::cout << "Parsed test file successfully:\n";
@@ -38,23 +37,28 @@ void addTestsFromDirectory(const std::string& directory) {
     }
 }
 
-// Создаем тесты для каждого файла
-TEST(ShortestPathTest, TestFromFile) {
-    for (const auto& data : test_data) {
-        int result = shortest_path(data.N, data.edges, data.start, data.end);
+// Создаем отдельный тест для каждого файла
+class ShortestPathTest : public ::testing::TestWithParam<TestData> {};
 
-	std::cout << "Computed result: " << result << ", Expected result: " << data.expected_result << "\n";
+TEST_P(ShortestPathTest, TestFromFile) {
+    const TestData& data = GetParam();
+    int result = shortest_path(data.N, data.edges, data.start, data.end);
 
-        EXPECT_EQ(result, data.expected_result);
-    }
+    std::cout << "File: " << data.filename << "\n";
+    std::cout << "Computed result: " << result << ", Expected result: " << data.expected_result << "\n";
+
+    EXPECT_EQ(result, data.expected_result);
 }
 
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
+// Генерируем тесты
+INSTANTIATE_TEST_SUITE_P(FromFiles, ShortestPathTest, ::testing::ValuesIn(test_data));
 
-    // Добавляем тесты из директории
+// Загружаем данные для тестов перед выполнением
+int main(int argc, char** argv) {
+
     addTestsFromDirectory(DATA_DIR);
+
+    ::testing::InitGoogleTest(&argc, argv);
 
     return RUN_ALL_TESTS();
 }
-

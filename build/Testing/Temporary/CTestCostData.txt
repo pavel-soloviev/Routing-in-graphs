@@ -1,2 +1,2 @@
-AlgorithmTests 2 0.00161758
+AlgorithmTests 9 0.000442663
 ---

@@ -23,7 +23,7 @@ std::tuple<int, int, std::vector<std::tuple<int, int, int, int, int>>, int, int,
     }
 
     file >> start >> end;
-    file >> expected_result; // Чтение ожидаемого результата
+    file >> expected_result;
 
     return {N, E, edges, start, end, expected_result};
 }

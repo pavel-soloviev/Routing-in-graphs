@@ -1,36 +1,47 @@
-Start testing: Jan 27 14:37 MSK
+Start testing: Jan 27 15:14 MSK
 ----------------------------------------------------------
 1/1 Testing: AlgorithmTests
 1/1 Test: AlgorithmTests
 Command: "/home/pavel/Routing-in-graphs/build/tests/tests"
 Directory: /home/pavel/Routing-in-graphs/build/tests
-"AlgorithmTests" start time: Jan 27 14:37 MSK
+"AlgorithmTests" start time: Jan 27 15:14 MSK
 Output:
 ----------------------------------------------------------
+Parsed test file successfully:
+Filename:/home/pavel/Routing-in-graphs/tests/data/test3.test
+N: 4, E: 4, start: 0, end: 2
 Parsed test file successfully:
 Filename:/home/pavel/Routing-in-graphs/tests/data/test2.test
 N: 1000, E: 1100, start: 49, end: 88
 Parsed test file successfully:
 Filename:/home/pavel/Routing-in-graphs/tests/data/test1.test
 N: 4, E: 3, start: 0, end: 2
-[==========] Running 1 test from 1 test suite.
+[==========] Running 3 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from ShortestPathTest
-[ RUN      ] ShortestPathTest.TestFromFile
+[----------] 3 tests from FromFiles/ShortestPathTest
+[ RUN      ] FromFiles/ShortestPathTest.TestFromFile/0
+File: /home/pavel/Routing-in-graphs/tests/data/test3.test
+Computed result: 70, Expected result: 70
+[       OK ] FromFiles/ShortestPathTest.TestFromFile/0 (0 ms)
+[ RUN      ] FromFiles/ShortestPathTest.TestFromFile/1
+File: /home/pavel/Routing-in-graphs/tests/data/test2.test
 Computed result: 475, Expected result: 475
+[       OK ] FromFiles/ShortestPathTest.TestFromFile/1 (1 ms)
+[ RUN      ] FromFiles/ShortestPathTest.TestFromFile/2
+File: /home/pavel/Routing-in-graphs/tests/data/test1.test
 Computed result: 173, Expected result: 173
-[       OK ] ShortestPathTest.TestFromFile (1 ms)
-[----------] 1 test from ShortestPathTest (1 ms total)
+[       OK ] FromFiles/ShortestPathTest.TestFromFile/2 (0 ms)
+[----------] 3 tests from FromFiles/ShortestPathTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
-[  PASSED  ] 1 test.
+[==========] 3 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 3 tests.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"AlgorithmTests" end time: Jan 27 14:37 MSK
+"AlgorithmTests" end time: Jan 27 15:14 MSK
 "AlgorithmTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jan 27 14:37 MSK
+End testing: Jan 27 15:14 MSK
